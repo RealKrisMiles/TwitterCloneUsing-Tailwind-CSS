@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-twitter</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class=" bg-black text-white">
+    <div class="flex container mx-auto">
+        <div class="frist md:w-[75%] w-10 my-4 mt-9">
+            <div class="logo invert">
+                <svg viewBox="0 0 24 24" aria-hidden md:block="true"
+                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o ">
+                    <g>
+                        <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar mt-10">
+                <ul class="flex flex-col text-2xl space-y-8 ">
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/home_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block"> Home</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">  <span class="hidden md:block">Explore</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/notifications_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt=""> <span class="hidden md:block">Notifications</span></li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block">Message</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/sync_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block">Gork</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/list_alt_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block">List</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/bookmark_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block">Bookmarks</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/group_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block">Communities</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-full hover:invert w-fit px-2 hover:cursor-pointer">
+                        <svg width="40" viewBox="0 0 24 24" aria-hidden md:block="true"
+                            class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o ">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                    color="white"></path>
+                            </g>
+                        </svg> <span class="hidden md:block">Premium</span> </li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/person_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block"> Profile</span></li>
+                    <li
+                        class="flex items-center gap-4 hover:bg-gray-700 hover:rounded-xl hover:invert w-fit px-2 hover:cursor-pointer">
+                        <img width="40" src="icons/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="hidden md:block"> More</span></li>
+                    <li class="flex p-5">
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="post text-sm md:text-3xl md:space-y-8 ">
+                <span class="bg-blue-700 hover:cursor-pointer p-2 hover:bg-blue-500 md:px-10 md:py-5 rounded-full"> Post</span>
+            </div>
+
+
+        </div>
+
+        <div class="second w-full border-x-[1px] ">
+
+            <div class="top flex p-3 relative">
+                <div class="absolute w-1/5 h-1 bg-blue-500 bottom-0 left-[14%]  hover:visible rounded-full z-10"></div>
+                <div class="left flex justify-center text-lg p-2 text-sm md:text-xl w-1/2 text-center ">
+                    For you
+                </div>
+                <div class="absolute w-1/4 h-1 bg-blue-500 bottom-0 right-[22%] hover:visible rounded-full z-10"></div>
+                <div class="right p-2 flex justify-center  text-lg  text-sm md:text-xl text-center w-1/2">
+                    Following
+                </div>
+                <div class="settings flex justify-center  p-2 ">
+                    <img width="40" src="icons/settings_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-600"></div>
+
+            <div class="whatishappening flex gap-4">
+                <div class="img rounded-full m-2">
+                    <img width="70" class="rounded-full " src="img/image.png" alt="">
+                </div>
+                <div class="w-[70%]"> <input class=" h-7 my-5 w-full outline-none bg-black text-white text-xl " type="text"
+                        placeholder="What is happening?" name="" id="">
+                    <div class="flex text-blue-400 items-center  ">
+                        <div class="flex mr-16 gap-3 items-center "><span class="text-blue-400">
+                            <img src="icons/public_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </span>
+                        <span class="hidden md:block">Everyone can reply</span>
+                    </div>
+           
+                    </div>
+                    <div class="h-[1px] w-full bg-gray-600 mt-6"></div>
+                </div>
+                
+            </div>
+            <div class="blueicons items-center flex gap-2 p-2 pl-20 relative py-5 md:py-3  top-6 md:flex-row flex-col">
+                <div class="blueicons items-center flex gap-2 p-2 left-[10%] absolute">
+                <span class="">
+                    <img src="icons/image_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                <span class="">
+                    <img src="icons/gif_box_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                <span class="">
+                    <img src="icons/list_alt_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                <span class="">
+                    <img src="icons/mood_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                <span class="">
+                    <img src="icons/calendar_today_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                <span class="">
+                    <img src="icons/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+                </div>
+                <div class="items-center md:left-[80%] left-10 top-[-10px] md:top-0 absolute right-[20%]"> <span class="bg-blue-500 px-4 py-3 rounded-full">
+                    post
+                </span></div>
+               
+                </div>
+
+            <div class="h-[1px] mt-11 w-full bg-gray-600 "></div>
+
+            <div class="posts ">
+                <div class="post ">
+                    <div class="flex">
+                    <div class="img m-4">
+                         <img class="w-12 rounded-full" src="img/image.png" alt="">
+                    </div>
+                    <div class="content my-3">
+                        <span class="font-bold hover:underline hover:cursor-pointer text-white">Elon Musk </span>
+                        <span class="text-gray-400">
+                            @elonmusk · 6h
+                        </span>
+                        <div>
+                            legend
+                        </div>
+                        <div class="postimg  m-4 ml-0">
+                            <img class="rounded-xl" src="img/image.png" alt="">
+                        </div>            
+                    </div>
+                </div>
+                    <div class="icons flex w-[85%] justify-between text-gray-400 mx-12">
+                        <span class="flex gap-0.5">
+                            <img src="icons/comment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            1.1k
+
+                            
+                        </span>
+                        <span class="flex gap-0.5">
+                            <img src="icons/swap_calls_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            1.1k
+                        </span>
+                        <span class="flex gap-0.5">
+                            <img src="icons/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            1.1k
+                        </span>
+                        <span class="flex gap-0.5">
+                            <img src="icons/trending_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            1.1k
+                        </span>
+                        <span class="flex">
+                            <img src="icons/bookmark_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="icons/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="h-[1px] mt-3 w-full bg-gray-600 "></div>
+                    <div class="post ">
+                        <div class="flex">
+                        <div class="img m-4">
+                             <img class="w-12 rounded-full" src="img/image.png" alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Elon Musk </span>
+                            <span class="text-gray-400">
+                                @elonmusk · 6h
+                            </span>
+                            <div>
+                                legend
+                            </div>
+                            <div class="postimg  m-4 ml-0">
+                                <img class="rounded-xl" src="img/image.png" alt="">
+                            </div>            
+                        </div>
+                    </div>
+                        <div class="icons flex w-[85%] justify-between text-gray-400 mx-12">
+                            <span class="flex gap-0.5">
+                                <img src="icons/comment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+    
+                                
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/swap_calls_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/trending_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex">
+                                <img src="icons/bookmark_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <img src="icons/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="h-[1px] mt-3 w-full bg-gray-600 "></div>
+                       
+                    </div>
+                    <div class="post ">
+                        <div class="flex">
+                        <div class="img m-4">
+                             <img class="w-12 rounded-full" src="img/image.png" alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Elon Musk </span>
+                            <span class="text-gray-400">
+                                @elonmusk · 6h
+                            </span>
+                            <div>
+                                legend
+                            </div>
+                            <div class="postimg  m-4 ml-0">
+                                <img class="rounded-xl" src="img/image.png" alt="">
+                            </div>            
+                        </div>
+                    </div>
+                        <div class="icons flex w-[85%] justify-between text-gray-400 mx-12">
+                            <span class="flex gap-0.5">
+                                <img src="icons/comment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+    
+                                
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/swap_calls_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/trending_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex">
+                                <img src="icons/bookmark_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <img src="icons/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="h-[1px] mt-3 w-full bg-gray-600 "></div>
+                       
+                    </div>
+                    <div class="post ">
+                        <div class="flex">
+                        <div class="img m-4">
+                             <img class="w-12 rounded-full" src="img/image.png" alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Elon Musk </span>
+                            <span class="text-gray-400">
+                                @elonmusk · 6h
+                            </span>
+                            <div>
+                                legend
+                            </div>
+                            <div class="postimg  m-4 ml-0">
+                                <img class="rounded-xl" src="img/image.png" alt="">
+                            </div>            
+                        </div>
+                    </div>
+                        <div class="icons flex w-[85%] justify-between text-gray-400 mx-12">
+                            <span class="flex gap-0.5">
+                                <img src="icons/comment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+    
+                                
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/swap_calls_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex gap-0.5">
+                                <img src="icons/trending_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                1.1k
+                            </span>
+                            <span class="flex">
+                                <img src="icons/bookmark_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <img src="icons/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="h-[1px] mt-3 w-full bg-gray-600 "></div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="thrid w-full ">
+            <div class="search mt-3">
+                <input type="text" class="w-2/3 bg-gray-800 text-white px-12 py-4 rounded-full" placeholder="Search"
+                    id="">
+            </div>
+
+            <div class="relavent   m-3 py-5  bg-slate-950 w-2/3 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold rounded-full px-3 ">Relavent People</h1>
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3">
+                    <div class="text-xl text-gray-400">@krismiles</div>
+
+                    <div class="font-bold">I'm
+                        Bidding you farewell
+                        You'd never stand a chance in hell
+                        They've got another clientele
+                        You're
+                        Treading at the shore
+                        I bet you've never drowned before
+                        And someone that you'd do it for</div>
+
+                </div>
+            </div>
+
+            <div class="whats  m-3 py-5  bg-slate-950 w-2/3 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold rounded-full px-3 ">What's happening</h1>
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3">
+                    <div class="text-sm text-gray-400">Trending in India</div>
+                    <div class="font-bold">#Orry</div>
+                    <div class="text-sm text-gray-400">40.2k post</div>
+                </div>
+
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3">
+                    <div class="text-sm text-gray-400">Trending in India</div>
+                    <div class="font-bold">#Keshi</div>
+                    <div class="text-sm text-gray-400">10k post</div>
+                </div>
+
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3">
+                    <div class="text-sm text-gray-400">Trending</div>
+                    <div class="font-bold">#kristhepoem</div>
+                    <div class="text-sm text-gray-400">3 post</div>
+                </div>
+
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3">
+                    <div class="text-sm text-gray-400">Sports. Trending</div>
+                    <div class="font-bold">#Carcrahed</div>
+                    <div class="text-sm text-gray-400">20.2k post</div>
+                </div>
+            </div>
+            <div class="whats  m-3 py-5  bg-slate-950 w-2/3 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold rounded-full px-3  ">Whom to follow</h1>
+                <div class="items  px-4 p-3 cursor-pointer hover:bg-gray-800  px-3 ">
+
+                    <div class="text-sm text-gray-400">personal</div>
+                    <div class="font-bold">Nikki Shenoy</div>
+                    <div class="text-sm text-gray-400">@nikkitha</div>
+                    <div class="my-2">
+                        <div class="text-s text-gray-400">public</div>
+                        <div class="font-bold">Rachitha Pai</div>
+                        <div class="text-sm text-gray-400">@rachitharpai</div>
+                    </div>
+                </div>
+
+
+                <div class="text-blue-500 underline">Show More</div>
+            </div>
+        </div>
+
+</body>
+
+</html>
